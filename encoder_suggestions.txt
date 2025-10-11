@@ -1,0 +1,962 @@
+{
+    "SK_ID_CURR": {
+        "encoder": "none",
+        "unique_values": 291057,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "TARGET": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "NAME_CONTRACT_TYPE_x": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "object",
+        "note": "Binary categorical (e.g. Yes/No)."
+    },
+    "CODE_GENDER": {
+        "encoder": "none",
+        "unique_values": 3,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "FLAG_OWN_CAR": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_OWN_REALTY": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "CNT_CHILDREN": {
+        "encoder": "none",
+        "unique_values": 15,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_INCOME_TOTAL": {
+        "encoder": "none",
+        "unique_values": 1876,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_CREDIT_x": {
+        "encoder": "none",
+        "unique_values": 5496,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_ANNUITY_x": {
+        "encoder": "none",
+        "unique_values": 13371,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_GOODS_PRICE_x": {
+        "encoder": "none",
+        "unique_values": 986,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "NAME_TYPE_SUITE_x": {
+        "encoder": "onehot",
+        "unique_values": 8,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (8 unique)."
+    },
+    "NAME_INCOME_TYPE": {
+        "encoder": "onehot",
+        "unique_values": 7,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (7 unique)."
+    },
+    "NAME_EDUCATION_TYPE": {
+        "encoder": "onehot",
+        "unique_values": 5,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (5 unique)."
+    },
+    "NAME_FAMILY_STATUS": {
+        "encoder": "onehot",
+        "unique_values": 5,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (5 unique)."
+    },
+    "NAME_HOUSING_TYPE": {
+        "encoder": "onehot",
+        "unique_values": 6,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (6 unique)."
+    },
+    "REGION_POPULATION_RELATIVE": {
+        "encoder": "binary",
+        "unique_values": 1,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "DAYS_BIRTH": {
+        "encoder": "none",
+        "unique_values": 17448,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "DAYS_EMPLOYED": {
+        "encoder": "none",
+        "unique_values": 12450,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "DAYS_REGISTRATION": {
+        "encoder": "none",
+        "unique_values": 15607,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "DAYS_ID_PUBLISH": {
+        "encoder": "none",
+        "unique_values": 6161,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "FLAG_MOBIL": {
+        "encoder": "binary",
+        "unique_values": 1,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_EMP_PHONE": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_WORK_PHONE": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_CONT_MOBILE": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_PHONE": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_EMAIL": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "OCCUPATION_TYPE": {
+        "encoder": "onehot",
+        "unique_values": 19,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (19 unique)."
+    },
+    "CNT_FAM_MEMBERS": {
+        "encoder": "none",
+        "unique_values": 17,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "REGION_RATING_CLIENT": {
+        "encoder": "none",
+        "unique_values": 3,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+        "encoder": "none",
+        "unique_values": 3,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "WEEKDAY_APPR_PROCESS_START_x": {
+        "encoder": "onehot",
+        "unique_values": 7,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (7 unique)."
+    },
+    "HOUR_APPR_PROCESS_START_x": {
+        "encoder": "none",
+        "unique_values": 24,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "REG_REGION_NOT_LIVE_REGION": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "REG_REGION_NOT_WORK_REGION": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "LIVE_REGION_NOT_WORK_REGION": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "REG_CITY_NOT_LIVE_CITY": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "REG_CITY_NOT_WORK_CITY": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "LIVE_CITY_NOT_WORK_CITY": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "ORGANIZATION_TYPE": {
+        "encoder": "target",
+        "unique_values": 58,
+        "dtype": "object",
+        "note": "High-cardinality categorical (58 unique)."
+    },
+    "EXT_SOURCE_2": {
+        "encoder": "none",
+        "unique_values": 117215,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "EXT_SOURCE_3": {
+        "encoder": "none",
+        "unique_values": 810,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+        "encoder": "none",
+        "unique_values": 33,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE": {
+        "encoder": "none",
+        "unique_values": 10,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+        "encoder": "none",
+        "unique_values": 33,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE": {
+        "encoder": "none",
+        "unique_values": 9,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "DAYS_LAST_PHONE_CHANGE": {
+        "encoder": "none",
+        "unique_values": 3706,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "FLAG_DOCUMENT_2": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_3": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_4": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_5": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_6": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_7": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_8": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_9": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_10": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_11": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_12": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_13": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_14": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_15": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_16": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_17": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_18": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_19": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_20": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "FLAG_DOCUMENT_21": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_REQ_CREDIT_BUREAU_HOUR": {
+        "encoder": "none",
+        "unique_values": 5,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_REQ_CREDIT_BUREAU_DAY": {
+        "encoder": "none",
+        "unique_values": 8,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK": {
+        "encoder": "none",
+        "unique_values": 9,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON": {
+        "encoder": "none",
+        "unique_values": 24,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT": {
+        "encoder": "none",
+        "unique_values": 10,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR": {
+        "encoder": "none",
+        "unique_values": 25,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "SK_ID_PREV": {
+        "encoder": "none",
+        "unique_values": 1413700,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "NAME_CONTRACT_TYPE_y": {
+        "encoder": "onehot",
+        "unique_values": 4,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (4 unique)."
+    },
+    "AMT_ANNUITY_y": {
+        "encoder": "none",
+        "unique_values": 329537,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_APPLICATION": {
+        "encoder": "none",
+        "unique_values": 77600,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_CREDIT_y": {
+        "encoder": "none",
+        "unique_values": 81730,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AMT_GOODS_PRICE_y": {
+        "encoder": "none",
+        "unique_values": 86766,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "WEEKDAY_APPR_PROCESS_START_y": {
+        "encoder": "onehot",
+        "unique_values": 7,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (7 unique)."
+    },
+    "HOUR_APPR_PROCESS_START_y": {
+        "encoder": "none",
+        "unique_values": 24,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "FLAG_LAST_APPL_PER_CONTRACT": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "NFLAG_LAST_APPL_IN_DAY": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "NAME_CASH_LOAN_PURPOSE": {
+        "encoder": "target",
+        "unique_values": 25,
+        "dtype": "object",
+        "note": "High-cardinality categorical (25 unique)."
+    },
+    "NAME_CONTRACT_STATUS": {
+        "encoder": "onehot",
+        "unique_values": 4,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (4 unique)."
+    },
+    "DAYS_DECISION": {
+        "encoder": "none",
+        "unique_values": 2922,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "NAME_PAYMENT_TYPE": {
+        "encoder": "onehot",
+        "unique_values": 4,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (4 unique)."
+    },
+    "CODE_REJECT_REASON": {
+        "encoder": "onehot",
+        "unique_values": 9,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (9 unique)."
+    },
+    "NAME_CLIENT_TYPE": {
+        "encoder": "onehot",
+        "unique_values": 4,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (4 unique)."
+    },
+    "NAME_GOODS_CATEGORY": {
+        "encoder": "target",
+        "unique_values": 27,
+        "dtype": "object",
+        "note": "High-cardinality categorical (27 unique)."
+    },
+    "NAME_PORTFOLIO": {
+        "encoder": "onehot",
+        "unique_values": 5,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (5 unique)."
+    },
+    "NAME_PRODUCT_TYPE": {
+        "encoder": "onehot",
+        "unique_values": 3,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (3 unique)."
+    },
+    "CHANNEL_TYPE": {
+        "encoder": "onehot",
+        "unique_values": 8,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (8 unique)."
+    },
+    "SELLERPLACE_AREA": {
+        "encoder": "none",
+        "unique_values": 2077,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "NAME_SELLER_INDUSTRY": {
+        "encoder": "onehot",
+        "unique_values": 11,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (11 unique)."
+    },
+    "CNT_PAYMENT": {
+        "encoder": "none",
+        "unique_values": 48,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "NAME_YIELD_GROUP": {
+        "encoder": "onehot",
+        "unique_values": 5,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (5 unique)."
+    },
+    "PRODUCT_COMBINATION": {
+        "encoder": "onehot",
+        "unique_values": 18,
+        "dtype": "object",
+        "note": "Low-cardinality categorical (18 unique)."
+    },
+    "DAYS_FIRST_DRAWING": {
+        "encoder": "none",
+        "unique_values": 2799,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "DAYS_FIRST_DUE": {
+        "encoder": "none",
+        "unique_values": 2892,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "DAYS_LAST_DUE_1ST_VERSION": {
+        "encoder": "none",
+        "unique_values": 4603,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "DAYS_LAST_DUE": {
+        "encoder": "none",
+        "unique_values": 2869,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "DAYS_TERMINATION": {
+        "encoder": "none",
+        "unique_values": 2809,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "NFLAG_INSURED_ON_APPROVAL": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "float64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "community_id": {
+        "encoder": "none",
+        "unique_values": 291057,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "is_CashLoan": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_REQ_CREDIT_BUREAU_HOUR_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_REQ_CREDIT_BUREAU_DAY_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "DAYS_FIRST_DRAWING_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "DAYS_FIRST_DUE_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "DAYS_LAST_DUE_1ST_VERSION_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "DAYS_LAST_DUE_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "DAYS_TERMINATION_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_GOODS_PRICE_y_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "CNT_PAYMENT_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_ANNUITY_y_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "NFLAG_INSURED_ON_APPROVAL_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "EXT_SOURCE_2_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "EXT_SOURCE_3_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_GOODS_PRICE_x_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "AMT_ANNUITY_x_missing": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "CREDIT_INCOME_RATIO": {
+        "encoder": "none",
+        "unique_values": 47235,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "ANNUITY_INCOME_RATIO": {
+        "encoder": "none",
+        "unique_values": 84850,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "CREDIT_GOODS_RATIO": {
+        "encoder": "none",
+        "unique_values": 3470,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "INCOME_PER_PERSON": {
+        "encoder": "none",
+        "unique_values": 2375,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "CHILDREN_RATIO": {
+        "encoder": "none",
+        "unique_values": 17,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "PAYMENT_RATE": {
+        "encoder": "none",
+        "unique_values": 37562,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "AGE_YEARS": {
+        "encoder": "none",
+        "unique_values": 482,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "EMPLOYED_YEARS": {
+        "encoder": "none",
+        "unique_values": 12450,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "REGISTRATION_YEARS_AGO": {
+        "encoder": "none",
+        "unique_values": 15607,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "ID_PUBLISH_YEARS_AGO": {
+        "encoder": "none",
+        "unique_values": 6161,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "PHONE_CHANGE_YEARS_AGO": {
+        "encoder": "none",
+        "unique_values": 3706,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "EMPLOYMENT_TO_AGE_RATIO": {
+        "encoder": "none",
+        "unique_values": 207689,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "NUM_ACTIVE_CONTACTS": {
+        "encoder": "none",
+        "unique_values": 4,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "HAS_WORK_CONTACT": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "HAS_ALL_DOCS": {
+        "encoder": "none",
+        "unique_values": 4,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "STABILITY_SCORE": {
+        "encoder": "none",
+        "unique_values": 4,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "URBAN_RURAL": {
+        "encoder": "binary",
+        "unique_values": 1,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "CITY_REGION_MISMATCH_SCORE": {
+        "encoder": "none",
+        "unique_values": 7,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "BUREAU_QUERY_INTENSITY": {
+        "encoder": "none",
+        "unique_values": 30,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "SHORT_TERM_BUREAU_RATIO": {
+        "encoder": "none",
+        "unique_values": 56,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "CREDIT_DIFF": {
+        "encoder": "none",
+        "unique_values": 403445,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "ANNUITY_DIFF": {
+        "encoder": "none",
+        "unique_values": 727062,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "GOODS_PRICE_DIFF": {
+        "encoder": "none",
+        "unique_values": 213287,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "CREDIT_TO_GOODS_DELTA_RATIO": {
+        "encoder": "none",
+        "unique_values": 622288,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "SAME_CONTRACT_TYPE": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "SAME_WEEKDAY_APPR": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    },
+    "HOUR_APPR_DIFF": {
+        "encoder": "none",
+        "unique_values": 42,
+        "dtype": "int64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "CREDIT_DURATION_DAYS": {
+        "encoder": "none",
+        "unique_values": 1163,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "TIME_TO_FIRST_PAYMENT_DAYS": {
+        "encoder": "none",
+        "unique_values": 259,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "TIME_TO_TERMINATION_DAYS": {
+        "encoder": "none",
+        "unique_values": 2921,
+        "dtype": "float64",
+        "note": "Continuous or discrete numeric feature."
+    },
+    "OVERLAP_WITH_CURRENT": {
+        "encoder": "binary",
+        "unique_values": 2,
+        "dtype": "int64",
+        "note": "Numeric binary variable (0/1)."
+    }
+}
