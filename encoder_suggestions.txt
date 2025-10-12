@@ -623,12 +623,6 @@
         "dtype": "float64",
         "note": "Numeric binary variable (0/1)."
     },
-    "community_id": {
-        "encoder": "none",
-        "unique_values": 291057,
-        "dtype": "int64",
-        "note": "Continuous or discrete numeric feature."
-    },
     "is_CashLoan": {
         "encoder": "binary",
         "unique_values": 2,
