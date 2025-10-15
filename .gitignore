@@ -60,7 +60,7 @@ Thumbs.db
 # Model training outputs (keep only final artifact)
 training/__pycache__/
 artifacts/*.pkl
-!artifacts/model_pipeline.joblib  # keep trained model
+artifacts/*.joblib
 
 # Docker / deployment extras
 docker-compose.yml
