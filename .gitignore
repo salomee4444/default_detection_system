@@ -13,6 +13,7 @@ venv/
 env/
 ENV/
 .conda/
+
 .ipynb_checkpoints/
 
 # Logs
@@ -38,6 +39,8 @@ data/
 *.xls
 *.json
 *.parquet
+full_ml_notebook/
+*.ipynb
 
 # Temporary or local files
 .DS_Store
@@ -76,4 +79,4 @@ linux_one/
 *.joblib
 *.pkl
 
-full_ml_notebook/*.ipynb
+
