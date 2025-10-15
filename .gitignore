@@ -1,1 +1,67 @@
+# ========================
+# Python / FastAPI Project
+# ========================
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+.ipynb_checkpoints/
+
+# Logs
+*.log
+*.out
+*.err
+
+# Environment files
+.env
+*.env.*
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+
+# Data and artifacts (raw training data)
+data/
 *.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+
+# Temporary or local files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+
+# IDE / Editor configs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Git / misc
+.git/
+.gitignore
+.gitattributes
+
+# Model training outputs (keep only final artifact)
+training/__pycache__/
+artifacts/*.pkl
+!artifacts/model_pipeline.joblib  # keep trained model
+
+# Docker / deployment extras
+docker-compose.yml
+.dockerignore

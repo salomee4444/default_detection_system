@@ -1,0 +1,216 @@
+create table public.loan_staging (
+  sk_id_curr bigint null,
+  target integer null,
+  name_contract_type_x text null,
+  code_gender text null,
+  flag_own_car integer null,
+  flag_own_realty integer null,
+  cnt_children integer null,
+  amt_income_total numeric null,
+  amt_credit_x numeric null,
+  amt_annuity_x numeric null,
+  amt_goods_price_x numeric null,
+  name_type_suite_x text null,
+  name_income_type text null,
+  name_education_type text null,
+  name_family_status text null,
+  name_housing_type text null,
+  region_population_relative integer null,
+  days_birth integer null,
+  days_employed integer null,
+  days_registration integer null,
+  days_id_publish integer null,
+  flag_mobil integer null,
+  flag_emp_phone integer null,
+  flag_work_phone integer null,
+  flag_cont_mobile integer null,
+  flag_phone integer null,
+  flag_email integer null,
+  occupation_type text null,
+  cnt_fam_members integer null,
+  region_rating_client integer null,
+  region_rating_client_w_city integer null,
+  weekday_appr_process_start_x text null,
+  hour_appr_process_start_x integer null,
+  reg_region_not_live_region integer null,
+  reg_region_not_work_region integer null,
+  live_region_not_work_region integer null,
+  reg_city_not_live_city integer null,
+  reg_city_not_work_city integer null,
+  live_city_not_work_city integer null,
+  organization_type text null,
+  ext_source_2 numeric null,
+  ext_source_3 numeric null,
+  obs_30_cnt_social_circle integer null,
+  def_30_cnt_social_circle integer null,
+  obs_60_cnt_social_circle integer null,
+  def_60_cnt_social_circle integer null,
+  days_last_phone_change integer null,
+  flag_document_2 integer null,
+  flag_document_3 integer null,
+  flag_document_4 integer null,
+  flag_document_5 integer null,
+  flag_document_6 integer null,
+  flag_document_7 integer null,
+  flag_document_8 integer null,
+  flag_document_9 integer null,
+  flag_document_10 integer null,
+  flag_document_11 integer null,
+  flag_document_12 integer null,
+  flag_document_13 integer null,
+  flag_document_14 integer null,
+  flag_document_15 integer null,
+  flag_document_16 integer null,
+  flag_document_17 integer null,
+  flag_document_18 integer null,
+  flag_document_19 integer null,
+  flag_document_20 integer null,
+  flag_document_21 integer null,
+  amt_req_credit_bureau_hour integer null,
+  amt_req_credit_bureau_day integer null,
+  amt_req_credit_bureau_week integer null,
+  amt_req_credit_bureau_mon integer null,
+  amt_req_credit_bureau_qrt integer null,
+  amt_req_credit_bureau_year integer null,
+  sk_id_prev bigint null,
+  name_contract_type_y text null,
+  amt_annuity_y numeric null,
+  amt_application numeric null,
+  amt_credit_y numeric null,
+  amt_goods_price_y numeric null,
+  weekday_appr_process_start_y text null,
+  hour_appr_process_start_y integer null,
+  flag_last_appl_per_contract integer null,
+  nflag_last_appl_in_day integer null,
+  name_cash_loan_purpose text null,
+  name_contract_status text null,
+  days_decision integer null,
+  name_payment_type text null,
+  code_reject_reason text null,
+  name_client_type text null,
+  name_goods_category text null,
+  name_portfolio text null,
+  name_product_type text null,
+  channel_type text null,
+  sellerplace_area numeric null,
+  name_seller_industry text null,
+  cnt_payment integer null,
+  name_yield_group text null,
+  product_combination text null,
+  days_first_drawing integer null,
+  days_first_due integer null,
+  days_last_due_1st_version integer null,
+  days_last_due integer null,
+  days_termination integer null,
+  nflag_insured_on_approval integer null,
+  community_id bigint null,
+  is_cashloan integer null,
+  obs_30_cnt_social_circle_missing integer null,
+  def_30_cnt_social_circle_missing integer null,
+  obs_60_cnt_social_circle_missing integer null,
+  def_60_cnt_social_circle_missing integer null,
+  amt_req_credit_bureau_hour_missing integer null,
+  amt_req_credit_bureau_day_missing integer null,
+  amt_req_credit_bureau_week_missing integer null,
+  amt_req_credit_bureau_mon_missing integer null,
+  amt_req_credit_bureau_qrt_missing integer null,
+  amt_req_credit_bureau_year_missing integer null,
+  days_first_drawing_missing integer null,
+  days_first_due_missing integer null,
+  days_last_due_1st_version_missing integer null,
+  days_last_due_missing integer null,
+  days_termination_missing integer null,
+  amt_goods_price_y_missing integer null,
+  cnt_payment_missing integer null,
+  amt_annuity_y_missing integer null,
+  nflag_insured_on_approval_missing integer null,
+  ext_source_2_missing integer null,
+  ext_source_3_missing integer null,
+  amt_goods_price_x_missing integer null,
+  amt_annuity_x_missing integer null,
+  credit_income_ratio numeric null,
+  annuity_income_ratio numeric null,
+  credit_goods_ratio numeric null,
+  income_per_person numeric null,
+  children_ratio numeric null,
+  payment_rate numeric null,
+  age_years numeric null,
+  employed_years numeric null,
+  registration_years_ago numeric null,
+  id_publish_years_ago numeric null,
+  phone_change_years_ago numeric null,
+  employment_to_age_ratio numeric null,
+  num_active_contacts integer null,
+  has_work_contact integer null,
+  has_all_docs integer null,
+  stability_score integer null,
+  urban_rural integer null,
+  city_region_mismatch_score integer null,
+  bureau_query_intensity integer null,
+  short_term_bureau_ratio numeric null,
+  credit_diff numeric null,
+  annuity_diff numeric null,
+  goods_price_diff numeric null,
+  credit_to_goods_delta_ratio numeric null,
+  same_contract_type integer null,
+  same_weekday_appr integer null,
+  hour_appr_diff integer null,
+  credit_duration_days integer null,
+  time_to_first_payment_days integer null,
+  time_to_termination_days integer null,
+  overlap_with_current integer null,
+  id bigserial not null,
+  user_id uuid null,
+  risk_score numeric null,
+  created_at timestamp with time zone null default now(),
+  updated_at timestamp with time zone null default now(),
+  pdf_path text null,
+  prediction_timestamp timestamp with time zone null,
+  ml_api_status character varying(20) null default 'pending'::character varying,
+  constraint loan_staging_pkey primary key (id),
+  constraint loan_staging_user_id_fkey foreign KEY (user_id) references auth.users (id) on delete CASCADE
+) TABLESPACE pg_default;
+
+create index IF not exists idx_loan_staging_risk_score on public.loan_staging using btree (risk_score) TABLESPACE pg_default;
+
+create index IF not exists idx_loan_staging_user_id on public.loan_staging using btree (user_id) TABLESPACE pg_default;
+
+create index IF not exists idx_loan_staging_created_at on public.loan_staging using btree (created_at) TABLESPACE pg_default;
+
+create index IF not exists idx_loan_staging_sk_id_curr on public.loan_staging using btree (sk_id_curr) TABLESPACE pg_default;
+
+create index IF not exists idx_loan_staging_ml_status on public.loan_staging using btree (ml_api_status) TABLESPACE pg_default;
+
+create index IF not exists idx_loan_staging_target_null on public.loan_staging using btree (target) TABLESPACE pg_default
+where
+  (target is null);
+
+create trigger update_loan_staging_updated_at BEFORE
+update on loan_staging for EACH row
+execute FUNCTION update_updated_at_column ();
+
+create trigger trigger_refresh_defaulted_view
+after INSERT
+or DELETE
+or
+update on loan_staging for EACH STATEMENT
+execute FUNCTION refresh_defaulted_applications_view ();
+
+create trigger on_loan_staging_insert_generate_pdf
+after INSERT on loan_staging for EACH row
+execute FUNCTION trigger_pdf_generation ();
+
+create trigger loan_staging_ml_prediction
+after INSERT on loan_staging for EACH row
+execute FUNCTION trigger_ml_prediction_webhook ();
+
+create trigger trigger_pdf_generation_after_risk
+after
+update OF risk_score on loan_staging for EACH row when (
+  new.risk_score is not null
+  and (
+    old.risk_score is null
+    or old.risk_score <> new.risk_score
+  )
+)
+execute FUNCTION trigger_pdf_generation ();
