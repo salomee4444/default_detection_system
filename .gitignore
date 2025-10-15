@@ -69,3 +69,11 @@ docker-compose.yml
 *.pkl
 linux_one/
 
+
+# large artifacts
+artifacts/
+linux_one/
+*.joblib
+*.pkl
+
+full_ml_notebook/*.ipynb
