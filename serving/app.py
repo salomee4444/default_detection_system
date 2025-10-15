@@ -2,6 +2,8 @@
 from pathlib import Path
 from typing import Any, Dict, List
 import os
+import urllib.request
+
 import numpy as np
 import pandas as pd
 import joblib
@@ -9,18 +11,32 @@ import joblib
 from fastapi import FastAPI, Header, HTTPException
 from pydantic import BaseModel, Field
 
+# --- Paths & config ---
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ARTIFACT_PATH = PROJECT_ROOT / "artifacts" / "model_pipeline.joblib"
 
 API_TOKEN = os.getenv("API_TOKEN", "change-me")
 THRESHOLD = float(os.getenv("PRED_THRESHOLD", "0.30"))
+MODEL_URL = os.getenv("MODEL_URL", "")
 
+# --- Ensure artifact exists (download if necessary) ---
 if not ARTIFACT_PATH.exists():
-    raise RuntimeError(f"Model artifact not found at {ARTIFACT_PATH}. Train first and commit the file.")
+    if MODEL_URL:
+        ARTIFACT_PATH.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            print(f"Downloading model from {MODEL_URL} -> {ARTIFACT_PATH}")
+            urllib.request.urlretrieve(MODEL_URL, ARTIFACT_PATH)
+        except Exception as e:
+            raise RuntimeError(f"Model artifact not found and download failed: {e}")
+    else:
+        raise RuntimeError(
+            f"Model artifact not found at {ARTIFACT_PATH} and MODEL_URL is not set."
+        )
 
-# Load once on startup
+# --- Load pipeline once on startup ---
 pipe = joblib.load(ARTIFACT_PATH)
 
+# --- Schemas ---
 class PredictIn(BaseModel):
     row_id: str = Field(..., description="PK of the row in your DB")
     features: Dict[str, Any]
@@ -36,6 +52,7 @@ class PredictBatchIn(BaseModel):
 class PredictBatchOut(BaseModel):
     results: List[PredictOut]
 
+# --- App ---
 app = FastAPI(title="Default Detection API", version="1.0.0")
 
 def _auth_or_401(auth_header: str):
@@ -66,4 +83,5 @@ def predict(payload: PredictIn, authorization: str = Header(default="")):
 @app.post("/predict_batch", response_model=PredictBatchOut)
 def predict_batch(payload: PredictBatchIn, authorization: str = Header(default="")):
     _auth_or_401(authorization)
-    return PredictBatchOut(results=[_score_row(r.row_id, r.features) for r in payload.rows])
+    results = [_score_row(r.row_id, r.features) for r in payload.rows]
+    return PredictBatchOut(results=results)

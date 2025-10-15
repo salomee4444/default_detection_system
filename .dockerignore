@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+.data/
+.env
+.git
+.results/
+*.csv
+full_ml_notebook/
+.env
