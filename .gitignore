@@ -64,4 +64,8 @@ artifacts/*.joblib
 
 # Docker / deployment extras
 docker-compose.yml
-.dockerignore
+.dockerignoreartifacts/
+*.joblib
+*.pkl
+linux_one/
+
