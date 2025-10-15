@@ -41,7 +41,7 @@ data/
 *.parquet
 full_ml_notebook/
 *.ipynb
-
+*.ipynb
 # Temporary or local files
 .DS_Store
 Thumbs.db
